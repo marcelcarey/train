@@ -1,4 +1,6 @@
-var config = {
+$(document).ready(function() {
+});
+    var config = {
     apiKey: "AIzaSyCCJcg-eGM1IGY4uaUypfZv_b3FJBMdZi8",
     authDomain: "rockpaperscissor-5b7c1.firebaseapp.com",
     databaseURL: "https://rockpaperscissor-5b7c1.firebaseio.com",
@@ -6,7 +8,7 @@ var config = {
     storageBucket: "rockpaperscissor-5b7c1.appspot.com",
     messagingSenderId: "530855390395",
     appId: "1:530855390395:web:a3c6c2bedf5c0d52"
-      };
+};
 
       firebase.initializeApp(config)
 
