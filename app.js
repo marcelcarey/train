@@ -1,5 +1,5 @@
 $(document).ready(function() {
-});
+
     var config = {
     apiKey: "AIzaSyCCJcg-eGM1IGY4uaUypfZv_b3FJBMdZi8",
     authDomain: "rockpaperscissor-5b7c1.firebaseapp.com",
@@ -21,14 +21,16 @@ $('#addTrainBtn').on('click',function(){
     var frequency = $('#frequencyInput').val().trim()
 
     console.log(firstTrain)
-    return false
 
-var newTrain = {
+
+
+var newTrain = { 
     name: trainName,
     destination: destination,
     firstTrain: firstTrain,
     frequency: frequency
 }
+
 
 trainData.ref().push(newTrain)
 alert('Train Added!')
@@ -54,4 +56,5 @@ var minutes = frequency - remainder
 var arrival = moment().add(minutes,'m').format('hh:mm A')
 
 $('#trainTable > tBody').append('<tr><td>' +name+'</td><td>' +destination+ '</td><td>'+frequency+ '</td><td>'+arrival+ '</td><td>'+minutes+ '</td></tr>')
+})
 })
