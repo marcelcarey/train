@@ -40,13 +40,13 @@ $('#destinationInput').val('')
 $('#firstTrainInput').val('')
 $('#frequencyInput').val('')
 
-return false
+return true
 
 
 })   
 
 trainData.ref().on('child_added', function(snapshot){
-var name = snapshot.val().name()
+var name = snapshot.val().name
 var destination = snapshot.val().destination
 var firstTrain = snapshot.val().firstTrain
 var frequency = snapshot.val().frequency
